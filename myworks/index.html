@@ -19,14 +19,14 @@
           </nav>
         </header>
         <section id="about">
-          <h2>ABOUT</h2>
+          <h3>ABOUT</h3>
           <p>茂木竣英</p>
-          <p>便利で多くの人が利用できるWEB制作を心がけ取り組みます</p>
+          <p>多くの人が便利に利用できるWEB制作を心がけ取り組みます</p>
           <a href="https://github.com/MogiShunei">github</a>
         </section>
         <section id="news">
-          <h2>NEWS</h2>
-          <table border="1">
+          <h3>NEWS</h3>
+          <table border="1" id="table">
             <tr>
               <th>DATE</th>
               <th>CONTENTS</th>
@@ -42,13 +42,63 @@
           </table>
         </section>
         <section id="works">
-          <h2>WORKS</h2>
+          <h3>WORKS</h3>
         </section>
+        <h3>CONTACT</h3>
         <section id="contact">
-          <h2>CONTACT</h2>
+          <form action="" method="post">
+            <div>
+              <label for="name">Name</label>
+              <br>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="山田　太郎"
+                required
+              />
+            </div>
+            <div>
+              <label for="mail">E-mail</label>
+              <br>
+              <input
+                id="mail"
+                type="email"
+                name="email"
+                placeholder="aaa@aaa.com"
+                required
+              />
+            </div>
+            <div>
+              <label for="category">Category</label>
+              <br>
+              <select id="category" name="category">
+                <option value="">お問い合わせ項目を選択</option>
+                <option value="schedule">スケジュールについて</option>
+                <option value="question">作品への質問</option>
+                <option value="other">その他</option>
+              </select>
+            </div>
+            <div>
+              <label for="comment">Content</label>
+              <br>
+              <textarea
+                id="comment"
+                rows="10"
+                cols="30"
+                placeholder="お問い合わせ内容を入力して下さい"
+                required
+              ></textarea>
+            </div>
+            <div>
+              <button type="button" class="btn btn-dark" id="submit">送信</button>
+            </div>
+          </form>
         </section>
       </div>
     </main>
   </body>
-  <footer></footer>
+  <footer id="footer">
+    <p>Copyright 2023 MY WORKS</p>
+  </footer>
 </html>

@@ -1,3 +1,14 @@
+h1{
+    font-size:  48px;
+    font-family: serif;
+}
+a{
+    font-weight: bold;
+    color: #000;
+}
+h1,h2,h3{
+    text-align: center;
+}
 nav{
     display: flex;
     flex-wrap: wrap;
@@ -7,5 +18,15 @@ nav p{
 }
 th{
     color: white;
+    background-color: black;
+}
+#content, #table{
+    width: 80%;
+    margin: auto;
+}
+footer{
+    text-align: center;
+    font-size: 14px;
+    color:white;
     background-color: black;
 }
