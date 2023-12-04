@@ -1,0 +1,11 @@
+nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav p{
+    padding: 10px;
+}
+th{
+    color: white;
+    background-color: black;
+}
