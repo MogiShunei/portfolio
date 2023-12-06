@@ -7,24 +7,29 @@
   </head>
 
   <body>
-    <main>
       <div id="content">
         <header id="header">
           <h1>MY WORKS</h1>
+          <div id="humb-open" class="sp-icon"><img src="img/humb-open.png" alt="ハンバーガーメニューを開くアイコン"></div>
           <nav id="menu">
+            <div id="humb-close" class="sp-icon">
+                <img src="img/humb-close.png" alt="クローズアイコン">
+            </div>
+            <h2>MENU</h2>
             <a href="index.html#about"><p>about</p></a>
             <a href="index.html#news"><p>news</p></a>
-            <a href="index.html#blog"><p>blog</p></a>
+            <a href="index.html#works"><p>works</p></a>
             <a href="index.html#contact"><p>contact</p></a>
           </nav>
         </header>
-        <section id="about">
+        <main>
+          <section id="about">
           <h3>ABOUT</h3>
           <p>茂木竣英</p>
           <p>多くの人が便利に利用できるWEB制作を心がけ取り組みます</p>
           <a href="https://github.com/MogiShunei">github</a>
-        </section>
-        <section id="news">
+          </section>
+          <section id="news">
           <h3>NEWS</h3>
           <table border="1" id="table">
             <tr>
@@ -40,16 +45,35 @@
               <td>Webサイトを開設しました</td>
             </tr>
           </table>
-        </section>
-        <section id="works">
+          </section>
+          <section id="works">
           <h3>WORKS</h3>
-        </section>
-        <h3>CONTACT</h3>
-        <section id="contact">
+          <div class="works-list">
+            <div class="works-item">
+              <h4>陸軍運動会</h4>
+              <img src="img/works1.png" alt="陸軍運動会イメージ画像" />
+              <p>チーム制作で制作したミニゲーム集です</p>
+            </div>
+            <div class="works-item">
+              <h4>鬼狩りの英雄譚</h4>
+              <img src="img/works2.png" alt="鬼狩りの英雄譚イメージ画像" />
+              <p>チームで制作した横スクロールアクションゲームです</p>
+            </div>
+            <div class="works-item">
+              <h4>Ninja_Suvival</h4>
+              <img src="img/works3.png" alt="Ninja_Suvivalイメージ画像" />
+              <p>
+                学内で提供されている2Dゲームフレームワークを利用した個人でのゲーム制作
+              </p>
+            </div>
+          </div>
+          </section>
+          <section id="contact">
+          <h3>CONTACT</h3>
           <form action="" method="post">
             <div>
               <label for="name">Name</label>
-              <br>
+              <br />
               <input
                 id="name"
                 type="text"
@@ -60,7 +84,7 @@
             </div>
             <div>
               <label for="mail">E-mail</label>
-              <br>
+              <br />
               <input
                 id="mail"
                 type="email"
@@ -71,7 +95,7 @@
             </div>
             <div>
               <label for="category">Category</label>
-              <br>
+              <br />
               <select id="category" name="category">
                 <option value="">お問い合わせ項目を選択</option>
                 <option value="schedule">スケジュールについて</option>
@@ -81,7 +105,7 @@
             </div>
             <div>
               <label for="comment">Content</label>
-              <br>
+              <br />
               <textarea
                 id="comment"
                 rows="10"
@@ -91,14 +115,16 @@
               ></textarea>
             </div>
             <div>
-              <button type="button" class="btn btn-dark" id="submit">送信</button>
+              <button type="button" class="btn btn-dark" id="submit">
+                送信
+              </button>
             </div>
           </form>
-        </section>
-      </div>
-    </main>
+          </section>
+        </main>
+      <footer id="footer">
+        <p>Copyright 2023 MY WORKS</p>
+      </footer>
+      <script src="js/main.js"></script>
   </body>
-  <footer id="footer">
-    <p>Copyright 2023 MY WORKS</p>
-  </footer>
 </html>

@@ -1,3 +1,6 @@
+html{
+    background-color: aliceblue;
+}
 h1{
     font-size:  48px;
     font-family: serif;
@@ -9,6 +12,9 @@ a{
 h1,h2,h3{
     text-align: center;
 }
+h3{
+    text-decoration-line: underline;
+}
 nav{
     display: flex;
     flex-wrap: wrap;
@@ -16,17 +22,68 @@ nav{
 nav p{
     padding: 10px;
 }
+table{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
 th{
     color: white;
     background-color: black;
 }
-#content, #table{
-    width: 80%;
-    margin: auto;
+#content {
+	width:80%;
+	margin:auto;
 }
 footer{
     text-align: center;
     font-size: 14px;
     color:white;
     background-color: black;
+}
+.works-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.works-item{
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+}
+.works-item img{
+    
+}
+nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+nav p{
+	padding:10px;
+}
+@media screen and (max-width: 600px) {
+    main,.works-item{
+        width: 90%;
+    }
+}
+.sp-icon{
+    display: none;
+    position:fixed;
+    top: 5px;
+    left: 5px;
+}
+@media screen and (max-width : 600px){
+	#humb-open {
+		display: block;
+	}
+
+	#menu {
+		display: none;
+		position:fixed;
+		top: 0px;
+		left: 0px;
+		width:50%;
+		height:100%;
+		background-color: skyblue;
+		z-index:1;
+	}
 }
